@@ -1,0 +1,13 @@
+language: python
+python:
+  - 3.9.7
+before_script:
+  - cp .env.example .env
+  - python manage.py migrate --no-input
+install:
+  - pip install -q -r requirements-dev.txt
+script:
+  - flake8
+  - blue
+  - python manage.py test --settings=parsifal.test_settings
+sudo: false
