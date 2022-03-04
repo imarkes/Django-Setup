@@ -20,7 +20,7 @@ Iniciando o projeto:
 - Execute o docker no terminal e acesse a aplicação.
 
 ``` 
-- git clone https://github.com/imarkes/API-Setup-Django.git 
+- git clone https://github.com/imarkes/Django-Setup.git 
 - pip install -r requirements-dev.txt
 - python .\contrib\gen_env.py
 - docker-compose up -d
