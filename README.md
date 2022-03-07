@@ -12,16 +12,14 @@ Este projeto foi feito com:
 - Travis CI
 
 Iniciando o projeto:
-- Crie e ative uma virtual ENV 
-- Clone o repositório 
-- Instale as dependências:
+- Crie e ative a variável de ambiente.
+- Clone o repositório. 
 - Crie um arquivo .env na raiz do projeto com as keys atráves do env_gen.py
 - Se necessário alimente o arquivo .env e comente o databases sqlite3
 - Execute o docker no terminal e acesse a aplicação.
 
 ``` 
 - git clone https://github.com/imarkes/Django-Setup.git 
-- pip install -r requirements-dev.txt
 - python .\contrib\gen_env.py
 - docker-compose up -d
 - http://localhost:8080/swagger/
