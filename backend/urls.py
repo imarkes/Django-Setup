@@ -6,7 +6,7 @@ from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 
 
-from backend.core.views import ClienteViewSet, EnderecoViewSet
+from backend.core.views import ClienteViewSet
 
 
 schema_view = get_schema_view(
@@ -27,7 +27,6 @@ schema_view = get_schema_view(
 router = routers.DefaultRouter()
 
 router.register(r'clientes', ClienteViewSet, basename='clientes')
-router.register(r'enderecos', EnderecoViewSet, basename='enderecos')
 
 urlpatterns = [
     path("v1/", include(router.urls)),

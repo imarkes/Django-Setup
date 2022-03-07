@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from backend.core.models import Cliente, Endereco
+from backend.core.models import Cliente
 
 
 class ClienteSerializer(serializers.ModelSerializer):
@@ -10,8 +10,4 @@ class ClienteSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class EnderecoSerializer(serializers.ModelSerializer):
 
-    class Meta:
-        model = Endereco
-        fields = '__all__'
