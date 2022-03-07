@@ -64,6 +64,7 @@ class ClienteViewSet(viewsets.ViewSet):
 
 
 class EnderecoViewSet(viewsets.ViewSet):
+    """..."""
 
     def get_serializer_class(self):
         return EnderecoSerializer
@@ -110,9 +111,9 @@ class EnderecoViewSet(viewsets.ViewSet):
         serializer.save()
         return Response(serializer.data)
 
-    def partial_update(self, request, *args, **kwargs):
-        kwargs['partial'] = True
-        return self.update(request, *args, **kwargs)
+    # def partial_update(self, request, *args, **kwargs):
+    #     kwargs['partial'] = True
+    #     return self.update(request, *args, **kwargs)
 
     def destroy(self, request, pk=None):
         item = self.get_object()

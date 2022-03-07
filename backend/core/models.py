@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Cliente(models.Model):
+    """Tabela de Clientes. """
     nome = models.CharField(max_length=100, null=False)
     nascimento = models.DateField(null=False)
     sexo = models.CharField(max_length=2, null=False, choices=(('M', 'masculino'), ('F', 'femenino')
@@ -12,7 +13,8 @@ class Cliente(models.Model):
 
 
 class Endereco(models.Model):
-    rua = models.CharField(max_length=(100), null=False)
+    """ Tabela de Endereços."""
+    rua = models.CharField(max_length=(70), null=False)
     numero = models.IntegerField(null=False)
     complemento = models.CharField(max_length=100, null=False)
     cidade = models.CharField(max_length=100, null=False)
